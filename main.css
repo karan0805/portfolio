@@ -15,7 +15,7 @@ html{
 body{
 	width: 100%;
 	height: 100%;
-	background: url("images1/6.jpg") no-repeat center fixed;
+	background: url("images1/portfolio-background.jfif") no-repeat center fixed;
 	color: #eee;
 	background-size: cover;
 }
@@ -204,7 +204,7 @@ li{
 
 .landing-text h1 {
   font-size: 10rem;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Cookie', cursive;
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
