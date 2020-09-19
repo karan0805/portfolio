@@ -255,18 +255,17 @@
 			<h1>Contact</h1>
 			<h6>Let's work together</h6>
 		</div>
-		<form action="" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
+
+		<form method="post" autocomplete="off" name="google-sheet" data-aos="fade-down"     data-aos-easing="linear"     data-aos-duration="1500">
 			<label for="name">Name:</label>
 			<input type="text" id="name" name="name" placeholder="Enter your name..."  required>
 			<label for="email">Email:</label>
 			<input type="email" id="email" name="email" placeholder="Enter your email..."required>
 			<label for="service">Services</label>
-			<select name="service" id="service">
-				<option value="">Competitive Programming</option>
-				<option value="">Bug Bounty/Cybersecurity</option>
-				<option value="">Web Design/Development</option>
+			<select name="service" id="service" required>
+				<option value="competitive">Competitive Programming</option>
+				<option value="bugbounty">Bug Bounty/Cybersecurity</option>
+				<option value="webdesign">Web Design/Development</option>
 			</select>
 			<label for="subject">Subject:</label>
 			<textarea name="subject" id="subject" cols="10" rows="10"></textarea>	
@@ -285,6 +284,18 @@
 	</div>
 </footer>
 <!-------------------------------------------------------------------------------------------->
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbzQ5zwXJAzlnWF8H1B6GxEMbjFZ8W3QUmDQwqbHV8EnD_hE980/exec'
+	const form = document.forms['google-sheet']
+  
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => alert("Thanks for Contacting..! We Will Catch up Soon..."))
+		.catch(error => console.error('Error!', error.message))
+	})
+  </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>
