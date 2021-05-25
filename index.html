@@ -285,18 +285,22 @@
 </footer>
 <!-------------------------------------------------------------------------------------------->
 <script>
-	const scriptURL = 'https://script.google.com/macros/s/AKfycbzQ5zwXJAzlnWF8H1B6GxEMbjFZ8W3QUmDQwqbHV8EnD_hE980/exec'
-	const form = document.forms['google-sheet']
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzQ5zwXJAzlnWF8H1B6GxEMbjFZ8W3QUmDQwqbHV8EnD_hE980/exec'
+const form = document.forms['google-sheet']
   
-	form.addEventListener('submit', e => {
-	  e.preventDefault()
-	  fetch(scriptURL, { method: 'POST', headers: { 
-    'Content-Type': 'application/x-www-form-urlencoded',
-    'Access-Control-Allow-Origin': '*'
-  },body: new FormData(form)})
-		.then(response => alert("Thanks for Contacting..! We Will Catch up Soon..."))
-		.catch(error => console.error('Error!', error.message))
-	})
+form.addEventListener('submit', e => {
+	e.preventDefault()
+fetch(scriptURL, { 
+method: 'POST',
+headers: { 
+'Content-Type': 'application/x-www-form-urlencoded',
+'Access-Control-Allow-Origin': '*'
+ },
+body: new FormData(form)
+})
+.then(response => alert("Thanks for Contacting..! We Will Catch up Soon..."))
+.catch(error => console.error('Error!', error.message))
+})
   </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
