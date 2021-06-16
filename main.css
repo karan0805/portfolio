@@ -384,12 +384,10 @@ li{
 /*End services*/
 
 
-
-
-/*Start contact*/
+/* Start contact
 .contact{
-    /* background-color: rgba(167, 163, 163, 0.3); */
-}
+  background-color: rgba(167, 163, 163, 0.3); 
+} */
 
 form{
     width: 70%;
@@ -435,7 +433,7 @@ input[type="submit"]:hover{
     position: relative;
 }
 
-. up{
+.up{
     position: absolute;
     width: 5rem;
     height: 5rem;
