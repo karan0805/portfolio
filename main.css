@@ -82,7 +82,8 @@ color: rgba(255,255,255, .3);
 text-transform: uppercase;
 font-weight: 300;
 position: relative;
-margin-bottom: 1 rem;
+padding-bottom: 1rem;
+margin-bottom: 2rem;
 }
 
 .section-heading h1::before,
@@ -107,9 +108,10 @@ margin-bottom: 1 rem;
   bottom: -1rem;
 }
 .section-heading h6{
+font-family: 'Courgette', 'cursive';
 font-size: 1.6rem;
 font-weight: 300;
-margin:1rem;
+margin:1.5rem;
 }
 
 .has-margin-right{
@@ -394,24 +396,27 @@ form{
     margin:0 auto;
 }
 
-form label{
-    font-size: 1.5rem;
+ label{
+  font-family: 'Courgette', 'cursive';
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 input,select,textarea{
     width: 100%;
     padding: 1rem;
-    margin-top: 5px;
-    border: none;
+    margin-top: 0.5rem;
+    border-radius: 20px;
     outline-color: palevioletred;
 }
 
 input[type="submit"]{
     width: initial;
+    font-family: 'Courgette', 'cursive';
     background-color: rgb(216, 79, 79);
     color: #eee;
     padding: 1rem 2rem;
-    border-radius: 0.7rem;
+    border-radius: 2rem;
     cursor: pointer;
     transition: background-color 650ms;
 }
@@ -419,7 +424,7 @@ input[type="submit"]{
 input[type="submit"]:hover{
 
     color: #16162d;
-    background-color: #bba924;
+    background-color: #11c41d;
 
 }
 /*End contact*/
